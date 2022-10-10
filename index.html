@@ -21,8 +21,9 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
   <script src="scripts/videopopup.js"></script>
 
   <!-- Custom styles for this template -->
@@ -30,6 +31,7 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/snowflake.css">
   <style>
     .overlay {
       height: 100%;
@@ -63,6 +65,7 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
+          <div></div>
           <div class="fk_width" id="">
             <div class="custom_menu-btn">
               <!-- SideMenu -->
@@ -154,7 +157,7 @@
   <div id="vidBox">
     <div id="videCont">
       <div id="yt_video">
-       <iframe id="v1" allowfullscreen=""  allow="autoplay;" frameborder="" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div> 
    </div>
@@ -341,7 +344,7 @@
       </p>
     </div>
     <div class="img-box">
-      <img src="images/about-img.png" class="slider-img" alt="" />
+      <img src="images/plane.png" class="slider-img" alt="" />
     </div>
     <div class="btn-box">
       <a href="about.html">
@@ -369,24 +372,24 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="container">
-            <div class="client_container " style="flex-direction: row; flex-wrap: nowrap;">
+            <div class="client_container " style="flex-direction: row; flex-wrap: nowrap; margin-left: 5%;">
               <div class="client_box b-1">
                 <div class="client-id">
                   <div class="img-box">
-                    <img src="images/gundisch_jonathan.jpg" alt="" width="100px" height="100px"/>
+                    <img src="images/team/catalin_ivan.jpg" alt="" width="100px" height="100px"/>
                   </div>
                   <div class="name">
                     <h5 translate="no">
-                      Jonathan Gundisch
+                      Catalin Ivan
                     </h5>
                     <p>
-                      Marketing
+                      Manager
                     </p>
                   </div>
                 </div>
                 <div class="detail">
                   <p>
-                    Eu sunt Gundisch Jonathan si am ajutat la crearea acestui website.
+                    Eu sunt Catalin Ivan si sunt managerul acestei firme.
                   </p>
                   <div>
                     <div class="arrow_img">
@@ -397,7 +400,7 @@
               <div class="client_box b2">
                 <div class="client-id">
                   <div class="img-box">
-                    <img src="images/claudiu_padure.png" alt="" width="100px" height="100px"/>
+                    <img src="images/team/claudiu_padure.png" alt="" width="100px" height="100px"/>
                   </div>
                   <div class="name">
                     <h5 translate="no">
@@ -622,7 +625,9 @@
 
   <!-- end info section -->
 
-
+  <div class="snowflakes">
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
   <!-- footer section -->
   <section class="footer_section ">
     <p>
@@ -633,12 +638,18 @@
   <!-- footer section -->
   <script>
 
+    
+        
+$(".dropdown-btn").attr("hidden")
     function openMenu() {
       if (document.querySelector("#myNav").style.width == "") {
         document.querySelector("#myNav").style.width = "1px";
+        console.log("Sss")
+        
         
       } else {
         document.querySelector("#myNav").style.width = "";
+        $(".dropdown-btn").removeAttr("hidden")
       }
     }
 

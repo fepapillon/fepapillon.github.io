@@ -116,8 +116,8 @@ p {
 }
 
 .custom_menu-btn {
-  z-index: 9;
-  position: absolute;
+ 
+  position: sticky; top: 0;
   left: 0;
   top: 15px;
 }
@@ -257,6 +257,7 @@ a:focus {
 
 .fk_width {
   width: 105px;
+  position: fixed
 }
 
 .navbar-brand {
