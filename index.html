@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <script src="https://kit.fontawesome.com/44b175f991.js" crossorigin="anonymous"></script>
+  <title>Papillon</title>
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon-32x32.png">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
+  <script src="scripts/videopopup.js"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/snowflake.css">
+  <style>
+    .overlay {
+      height: 100%;
+      /*width: 0; */
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 86, 221, 0.95)), to(rgba(10, 216, 171, 0.95)));
+      background: linear-gradient(to bottom, rgba(8, 86, 221, 0.95), rgba(10, 216, 171, 0.95));
+      overflow-x: hidden;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+    }
+    h3 {
+      display: flex;
+    }
+    #yt_video iframe {
+      position:absolute;
+      top:20%;
+      left:15%;
+      width:70%; 
+      height:50%;}
+
+  </style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <div></div>
+          <div class="fk_width" id="">
+            <div class="custom_menu-btn">
+              <!-- SideMenu -->
+              <button class="dropdown-btn" onclick="openMenu()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+              
+            </div>
+
+            <div id="myNav" class="overlay" style =  "width: 1px;">
+              <div class="custom_menu-btn" style="padding-left: 25px;">
+                <!-- SideMenu -->
+                <button class="dropdown-btn" onclick="openMenu()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+              </div>
+              <div class="overlay-content">
+                
+                <a href="index.html">Acasa</a>
+                <a href="about.html">Despre Noi</a>
+                <a href="package.html">Pachete Turistice</a>
+                <a href="echipa.html">Echipa Noastra</a>
+                <label for="lang" ></label>
+              <select name="lang" id="lang" onchange="location = this.value;">
+                <option >Limba</option>
+                <option translate="no" value="https://fepapillon.github.io/">Romana</option>
+                <option translate="no" value="https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp">English</option>
+                <option translate="no" value="https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=de&_x_tr_hl=en-US&_x_tr_pto=wapp">Deutsch</option>
+                <option translate="no" value="https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=ja&_x_tr_hl=en-US&_x_tr_pto=wapp">日本 </option>
+                <option translate="no" value="https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=es&_x_tr_hl=en-US&_x_tr_pto=wapp">Español </option>
+              </select>
+              </div>
+            </div>
+
+          </div>
+          
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" class = "animate__pulse" alt=""/>
+          </a>
+        </center>
+          <div class="user_option">
+            <a>
+              <img src="" alt="" />
+              
+            </a>
+            <form class="form-inline my-2 my-lg-0  mb-3 mb-lg-0">
+              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="detail-box">
+        <div class="row">
+          <div class="col-md-8 col-lg-6 mx-auto">
+            <h1 translate="no">
+              F.E. Papillon S.R.L <br />
+              
+            </h1>
+            <h1>Agentie de Turism</h1>
+            <p>
+              Suntem minusculi intr-o lume uriasa. Daca nu o poti cucerii, CUNOASTE-O!
+            </p>
+            <div>
+              <a href="mailto: fepapillonsrl@yahoo.com">
+                Contacteaza-ne
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-box">
+        <!--
+        <div class="play_btn">
+          <a href="javascript:void(0)" id="video1">
+            <img src="images/play.png" alt="" />
+          </a>
+        </div>
+        -->
+        <img src="images/plane.png" class="slider-img" alt="" />
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <div id="vidBox">
+      <div id="videCont">
+        <div id="yt_video">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div> 
+    </div>
+
+   -->
+
+
+
+  <!-- book section -->
+
+  <section class="book_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="heading_container1">
+            <h2>
+              Unde ne puteti gasi
+            </h2>
+            <p>
+              Noi suntem disponibili de LUNI - VINERI intre orele 7:00 - 14:00
+            </p>
+          </div>
+          <form>
+            <div class="form-row " style="display:flex; align-items: center;">
+              <div style="display: flex;flex-wrap: nowrap;align-items: center;justify-content: center;flex-direction: column;align-content: center; width: 100%;">
+                <!--- <img src="images/maps.png" width="50%" alt="" style="margin-left: 0%;float: left;height: 400px;width: 400px;"> --->
+                <iframe src="bk.html" frameborder="0" width="50%" style="margin-left: 0%;float: left;height: 400px;width: 400px;"></iframe>
+                <div style="color: black;margin-left: 10px;font-family: 'Segoe UI',Arial,sans-serif; font-size: 20px;">
+                  <div>Strada: Metanului 1 | Oras: Medias | Judetul: Sibiu | Tara: România</div> <br>
+                </div>
+              </div>
+              
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end book section -->
+
+
+  <!-- package section -->
+  <section class="package_section layout_padding-top">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Pachete Turistice
+        </h2>
+        <p>
+          Pachete Turistice accesibile oricui!
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="package_container">
+        <div class="box ">
+          <div class="detail-box">
+            <h4>
+              Top 10 Parcuri Naturale din SUA
+            </h4>
+            <div class="price_detail">
+              <h5>
+                600$/pers
+              </h5>
+              <p>
+                Veti vizita cele mai frumoase parcuri naturale din SUA.
+              </p>
+            </div>
+            <a href="order.html">
+              Comanda Acum
+            </a>
+          </div>
+        </div>
+        <div class="box ">
+          <div class="detail-box">
+            <h4>
+              Plajele din Krabi
+            </h4>
+            <div class="price_detail">
+              <h5>
+                374$/pers
+              </h5>
+              <p>
+                Dacă plănuiești o vacanță în Thailanda, descopera cele mai bune plaje din Krabi.
+              </p>
+            </div>
+            <a href="order.html">
+              Comanda Acum
+            </a>
+          </div>
+        </div>
+        <div class="box ">
+          <div class="detail-box">
+            <h4>
+              Cele mai mari mistere ale Egiptului Antic
+            </h4>
+            <div class="price_detail">
+              <h5>
+               530$/pers
+              </h5>
+              <p>
+                Misterele îi înconjoară originile, religia și arhitectura monumentală, în special templele colosale, piramidele și enormul Sfinx.
+              </p>
+            </div>
+            <a href="order.html">
+              Comanda Acum
+            </a>
+          </div>
+        </div>
+        <div class="box ">
+          <div class="detail-box">
+            <h4>
+              Toamna in Delta Dunarii
+            </h4>
+            <div class="price_detail">
+              <h5>
+                250$/pers
+              </h5>
+              <p>
+                Va promitem ca de la noi veti pleca imbogatiti sufleteste si cu experiente minunate pentru ca Delta are cate ceva de oferit fiecaruia.
+              </p>
+            </div>
+            <a href="order.html">
+              Comanda Acum
+            </a>
+          </div>
+        </div>
+        <div class="box ">
+          <div class="detail-box">
+            <h4>
+              Sejur Charter Creta
+            </h4>
+            <div class="price_detail">
+              <h5>
+                550$/pers
+              </h5>
+              <p>
+                Siturile arheologice de la Knossos si Phaistos, situl de la Gortys, castelul venetian de la Rethymno si Cheile Samaria, alaturi de plajele aurii si vreme calda
+              </p>
+            </div>
+            <a href="order.html">
+              Comanda Acum
+            </a>
+          </div>
+        </div>
+        <div class="box ">
+          <div class="detail-box">
+            <h4>
+              Vietnam - Marele Circuit
+            </h4>
+            <div class="price_detail">
+              <h5>
+                2890$/pers
+              </h5>
+              <p>
+                Periplu vietnamez și plajă la Marea Chinei de Sud. Circuit de grup cu însoţitor al Agentiei noastre prin Vietnam.
+              </p>
+            </div>
+            <a href="order.html">
+              Comanda Acum
+            </a>
+          </div>
+        </div>
+      </div>
+      <section class="about_section" style="background-image: none;">
+        <div class="heading_container">
+          <div class="btn-box" style="margin-bottom: 0px;">
+            <a href="package.html">
+             Vedeti mai multe
+            </a>
+          </div>
+        </div>
+    </section>
+    </div>
+    
+  </section>
+  <!-- end package section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="heading_container">
+      <h2>
+        Despre Noi
+      </h2>
+      <p>
+        F.E Papillon S.R.L este o agentie turistica cu sediul la Medias in judetul Sibiu iar noi incercam sa oferim pachete turistice cat mai accesibile pentru toata lumea.
+      </p>
+    </div>
+    <div class="img-box">
+      <img src="images/plane.png" class="slider-img" alt="" />
+    </div>
+    <div class="btn-box">
+      <a href="about.html">
+        Citeste Mai Mult
+      </a>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- client section -->
+  <section class="client_section ">
+    <div class="container">
+      <div class="heading_container1">
+        <h2>
+          Cine suntem noi
+        </h2>
+        <p>
+          Noi suntem F.E Papillon S.R.L
+        </p>
+      </div>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="client_container " style="flex-direction: row; flex-wrap: nowrap; margin-left: 5%;">
+              <div class="client_box b-1">
+                <div class="client-id">
+                  <div class="img-box">
+                    <img src="images/team/catalin_ivan.jpg" alt="" width="100px" height="100px"/>
+                  </div>
+                  <div class="name">
+                    <h5 translate="no">
+                      Catalin Ivan
+                    </h5>
+                    <p>
+                      Manager
+                    </p>
+                  </div>
+                </div>
+                <div class="detail">
+                  <p>
+                    Eu sunt Catalin Ivan si sunt managerul acestei firme.
+                  </p>
+                  <div>
+                    <div class="arrow_img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="client_box b2">
+                <div class="client-id">
+                  <div class="img-box">
+                    <img src="images/team/claudiu_padure.png" alt="" width="100px" height="100px"/>
+                  </div>
+                  <div class="name">
+                    <h5 translate="no">
+                      Claudiu Padure
+                    </h5>
+                    <p>
+                      I.T.
+                    </p>
+                  </div>
+                </div>
+                <div class="detail">
+                  <p>
+                    Eu sunt Claudiu Padure si am creat acest website.
+                  </p>
+                  <div>
+                    <div class="arrow_img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+                <div class="detail">
+                  <p>
+                    delatii
+                  </p>
+                  <div>
+                    <div class="arrow_img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about_section">
+        <div class="btn-box">
+          <a href="echipa.html">
+            Echipa Noastra
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- end client section -->
+
+  <!-- info section -->
+
+  <section class="info_section ">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Contacteaza-ne
+          </h2>
+        </div>
+        <div class="info_logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <div class="info_top">
+          <div class="info_form">
+            <form action="">
+              <input type="text" id="email2" placeholder="Va rugam sa va introduceti e-mailul">
+              <button>
+                Aboneaza-te
+              </button>
+            </form>
+          </div>
+          <div class="social_box">
+            <a href="https://www.facebook.com/sngmedias">
+              <img src="images/facebook.png" alt="">
+            </a>
+            <a href="https://sngmedias.ro">
+              <img src="images/internet.png" width="32px" alt="">
+            </a>
+            <a href="https://www.instagram.com/colegiulsng/">
+              <img src="images/instagram.png" alt="">
+            </a>
+            <a href="https://www.youtube.com/channel/UC4RXs0NvFbNkak5T1BUOpaA">
+              <img src="images/youtube.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="info_main" style="text-align: center;">
+          <div class="row">
+            
+
+            <div class="col-md-3 col-lg-2 offset-lg-1">
+              <h5>
+                Informatii
+              </h5>
+              <ul>
+                <li>
+                  <a href="#">
+                    Acest website a fost
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    creat pentru firma de 
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    exercitiu a clasei de Turism XI de la
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Colegiu "Scoala Nationala de Gaz"
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <div class="info_link-box">
+                <h5>
+                  Linkuri Folositoare
+                </h5>
+                <ul>
+                  <li class=" active">
+                    <a class="link_button" href="index.html">Acasa <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="">
+                    <a class="link_button" href="about.html">Despre Noi </a>
+                  </li>
+                  <li class="">
+                    <a class="link_button" href="package.html">Pachete Turistice </a>
+                  </li>
+                  <li class="">
+                    <a class="link_button" href="echipa.html">Echipa Noastra </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-2 offset-lg-1" style="text-align: center;">
+              <h5>
+                Suport
+              </h5>
+              <ul >
+                <li>
+                  <a href="#">
+                    Daca aveti o nelamurire sau
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    a-ti intampinat o problema
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    va rugam sa ne contactati la
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    email-ul de mai jos
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 col-md-10 mx-auto">
+            <div class="info_contact layout_padding2">
+              <div class="row">
+                <div class="col-md-5">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="images/call.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        +0269845867
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="col-md-5">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="images/mail.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        fepapillonsrl@yahoo.com
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-2">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="images/location.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        Medias, str. Metanului 1 , România
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <div class="snowflakes">
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+  <!-- footer section -->
+  <section class="footer_section ">
+    <p>
+      &copy; 2022 All Rights Reserved. Design by
+      <a href="https://github.com/zKlau" translate="no">Claudiu Padure</a>
+    </p>
+  </section>
+  <!-- footer section -->
+  <script>
+
+    
+        
+$(".dropdown-btn").attr("hidden")
+    function openMenu() {
+      if (document.querySelector("#myNav").style.width == "") {
+        document.querySelector("#myNav").style.width = "1px";
+        console.log("Sss")
+        
+        
+      } else {
+        document.querySelector("#myNav").style.width = "";
+        $(".dropdown-btn").removeAttr("hidden")
+      }
+    }
+
+    $(function () {
+     $('#vidBox').VideoPopUp({ 
+      	backgroundColor: "#17212a",
+      	opener: "video1",
+       maxweight: "640",
+       idvideo: "v1"
+     });
+    });
+    $(document).ready(function(){
+    $('#v1').hide().delay(3000).fadeIn('slow');
+    });
+
+    
+    </script>
+    
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  
+
+</body>
+
+</html>
