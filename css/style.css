@@ -584,7 +584,7 @@ a:focus {
 .package_section .package_container .box {
   margin: 10px;
   -ms-flex-preferred-size: calc(33% - 20px);
-      flex-basis: calc(33% - 20px);
+      /*flex-basis: calc(33% - 20px); */
   border: 15px solid #ffffff;
   border-radius: 15px;
   padding: 25px 25px 25px;
