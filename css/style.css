@@ -83,7 +83,6 @@ p {
   position: relative;
  background: -webkit-gradient(linear, left top, left bottom, from(#0c4b9e), color-stop(#08bd88), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to bottom, #0856dd, #5af8de);
-  z-index: -10;
 }
 
 .sub_page .header_section {
