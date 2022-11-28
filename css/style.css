@@ -77,7 +77,16 @@ p {
 .heading_container h2 {
   font-weight: bold;
 }
-
+.dropdown-menu.show li a {
+  font-size: 10px !important;
+  line-height: 0.1;
+  color: #000000;
+  font-weight: 700;
+}
+.dropdown-menu.show li a:hover {
+  background-color: #4758f5;
+  color: white;
+}
 /*header section*/
 .hero_area {
   position: relative;
@@ -213,7 +222,7 @@ p {
 
 .overlay-content {
   position: relative;
-  top: 20%;
+  /*top: 20%;*/
   width: 100%;
   text-align: center;
   margin-top: 30px;

@@ -16,7 +16,9 @@
   <link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon-32x32.png">
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
@@ -87,14 +89,19 @@
                 <a href="about.html">Despre Noi</a>
                 <a href="package.html">Pachete Turistice</a>
                 <a href="echipa.html">Echipa Noastra</a>
-                <select name="lang" id="lang" onchange="location = this.value;">
-                  <option >Limba</option>
-                  <option translate="no" value="https://zklau.github.io/Papillon/">Romana</option>
-                  <option translate="no" value="https://zklau-github-io.translate.goog/Papillon/index.html?_x_tr_sl=ro&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp">English</option>
-                  <option translate="no" value="https://zklau-github-io.translate.goog/Papillon/?_x_tr_sl=ro&_x_tr_tl=de&_x_tr_hl=en-US&_x_tr_pto=wapp">Deutsch</option>
-                  <option translate="no" value="https://zklau-github-io.translate.goog/Papillon/?_x_tr_sl=ro&_x_tr_tl=ja&_x_tr_hl=en-US&_x_tr_pto=wapp">日本 </option>
-                  <option translate="no" value="https://zklau-github-io.translate.goog/Papillon/index.html?_x_tr_sl=ro&_x_tr_tl=es&_x_tr_hl=en-US&_x_tr_pto=wapp">Español </option>
-                </select>
+                <div class="dropdown">
+                  <a class="btn btn-secondary dropdown-toggle btn-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 13px;">
+                    Limba
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a translate="no"  href="https://fepapillon.github.io/">Romana</a></li>
+                    <li><a translate="no"  href="https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp">English</a></li>
+                    <li><a translate="no"  href="https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=de&_x_tr_hl=en-US&_x_tr_pto=wapp">Deutsch</a></li>
+                    <li><a translate="no"  href="https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=ja&_x_tr_hl=en-US&_x_tr_pto=wapp">日本 </a></li>
+                    <li><a translate="no"  href="https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=es&_x_tr_hl=en-US&_x_tr_pto=wapp">Español</a></li>
+                    <li><a translate="no"  href="https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=it&_x_tr_hl=en-US&_x_tr_pto=wapp">Italiano</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
 
