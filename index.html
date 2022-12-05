@@ -708,36 +708,36 @@ $(".dropdown-btn").attr("hidden")
     $('#v1').hide().delay(3000).fadeIn('slow');
     });
 
-    $(".lang-select").on("click",(e) => {
+    $(".lang-select").on("mouseover",(e) => {
+      console.log($(e.target).attr("data-lang"));
       switch ($(e.target).attr("data-lang")) {
         case "it":
-          window.location = "https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=it&_x_tr_hl=en-US&_x_tr_pto=wapp"
+          $(e.target).attr("href","https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=it&_x_tr_hl=en-US&_x_tr_pto=wapp")
           break;
 
         case "es":
-          window.location = "https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=es&_x_tr_hl=en-US&_x_tr_pto=wapp"
+          $(e.target).attr("href","https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=es&_x_tr_hl=en-US&_x_tr_pto=wapp")
           break;
 
         case "ro":
-          window.location = "https://fepapillon.github.io"
+        $(e.target).attr("href","https://fepapillon.github.io")
           break;
 
         case "en":
-          window.location = "https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp"
+        $(e.target).attr("href","https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp")
           break;
 
         case "jp":
-          window.location = "https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=ja&_x_tr_hl=en-US&_x_tr_pto=wapp"
+        $(e.target).attr("href","https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=ja&_x_tr_hl=en-US&_x_tr_pto=wapp")
           break;
 
         case "de":
-          window.location = "https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=de&_x_tr_hl=en-US&_x_tr_pto=wapp"
+        $(e.target).attr("href","https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=de&_x_tr_hl=en-US&_x_tr_pto=wapp")
           break;
 
         default:
           break
       }
-      window.location = $(e.target).attr("src")
     })
     </script>
     
