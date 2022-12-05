@@ -21,7 +21,7 @@
   
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
 
@@ -89,17 +89,18 @@
                 <a href="about.html">Despre Noi</a>
                 <a href="package.html">Pachete Turistice</a>
                 <a href="echipa.html">Echipa Noastra</a>
+                <label for="lang" ></label>
                 <div class="dropdown">
                   <a class="btn btn-secondary dropdown-toggle btn-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 13px;">
                     Limba
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a translate="no"  href="https://fepapillon.github.io/">Romana</a></li>
-                    <li><a translate="no"  href="https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp">English</a></li>
-                    <li><a translate="no"  href="https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=de&_x_tr_hl=en-US&_x_tr_pto=wapp">Deutsch</a></li>
-                    <li><a translate="no"  href="https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=ja&_x_tr_hl=en-US&_x_tr_pto=wapp">日本 </a></li>
-                    <li><a translate="no"  href="https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=es&_x_tr_hl=en-US&_x_tr_pto=wapp">Español</a></li>
-                    <li><a translate="no"  href="https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=it&_x_tr_hl=en-US&_x_tr_pto=wapp">Italiano</a></li>
+                    <li><a translate="no" class="lang-select" data-lang="ro">Romana</a></li>
+                    <li><a translate="no" class="lang-select" data-lang="en">English</a></li>
+                    <li><a translate="no" class="lang-select" data-lang="de">Deutsch</a></li>
+                    <li><a translate="no" class="lang-select" data-lang="jp">日本 </a></li>
+                    <li><a translate="no" class="lang-select" data-lang="es">Español</a></li>
+                    <li><a translate="no" class="lang-select" data-lang="it">Italiano</a></li>
                   </ul>
                 </div>
               </div>
@@ -454,6 +455,7 @@
     </script>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="scripts/side-menu.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
 </body>

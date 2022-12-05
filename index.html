@@ -110,16 +110,6 @@
                     <li><a translate="no" class="lang-select" data-lang="it">Italiano</a></li>
                   </ul>
                 </div>
-                <!--
-              <select name="lang" id="lang" onchange="location = this.value;">
-                <option >Limba</option>
-                <option translate="no" value="https://fepapillon.github.io/">Romana</option>
-                <option translate="no" value="https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp">English</option>
-                <option translate="no" value="https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=de&_x_tr_hl=en-US&_x_tr_pto=wapp">Deutsch</option>
-                <option translate="no" value="https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=ja&_x_tr_hl=en-US&_x_tr_pto=wapp">日本 </option>
-                <option translate="no" value="https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=es&_x_tr_hl=en-US&_x_tr_pto=wapp">Español </option>
-              </select>
-              -->
               </div>
             </div>
 
@@ -707,42 +697,10 @@ $(".dropdown-btn").attr("hidden")
     $(document).ready(function(){
     $('#v1').hide().delay(3000).fadeIn('slow');
     });
-
-    $(".lang-select").on("mouseover",(e) => {
-      console.log($(e.target).attr("data-lang"));
-      switch ($(e.target).attr("data-lang")) {
-        case "it":
-          $(e.target).attr("href","https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=it&_x_tr_hl=en-US&_x_tr_pto=wapp")
-          break;
-
-        case "es":
-          $(e.target).attr("href","https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=es&_x_tr_hl=en-US&_x_tr_pto=wapp")
-          break;
-
-        case "ro":
-        $(e.target).attr("href","https://fepapillon.github.io")
-          break;
-
-        case "en":
-        $(e.target).attr("href","https://fepapillon-github-io.translate.goog/index.html?_x_tr_sl=ro&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp")
-          break;
-
-        case "jp":
-        $(e.target).attr("href","https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=ja&_x_tr_hl=en-US&_x_tr_pto=wapp")
-          break;
-
-        case "de":
-        $(e.target).attr("href","https://fepapillon-github-io.translate.goog/?_x_tr_sl=ro&_x_tr_tl=de&_x_tr_hl=en-US&_x_tr_pto=wapp")
-          break;
-
-        default:
-          break
-      }
-    })
     </script>
     
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
- 
+  <script type="text/javascript" src="scripts/side-menu.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
   
