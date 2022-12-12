@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Papillon</title>
+  <title translate="no">Papillon</title>
   <link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon-32x32.png">
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -54,7 +54,42 @@
     left:15%;
     width:70%; 
     height:50%;}
+    .package_section .package_container {
+  display: -webkit-box !important; 
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  padding-top: 45px !important;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+}
 
+.package_section .package_container .box {
+  margin: 10px !important;
+  -ms-flex-preferred-size: calc(33% - 20px) !important;
+      flex-basis: calc(33% - 20px) !important;
+  border: 15px solid #ffffff !important;
+  border-radius: 15px !important;
+  padding: 25px 25px 25px !important;
+  background-size: cover !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  background-image: url(../images/package-bg1.jpg) !important;
+  background-position: bottom !important;
+  background-size: cover !important;
+  -webkit-transition: all .2s !important;
+  transition: all .2s !important;
+}
 </style>
 <body class="sub_page">
   <div class="hero_area">
