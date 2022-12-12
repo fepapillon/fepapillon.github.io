@@ -376,7 +376,7 @@ a:focus {
   background-image: url(../images/munte.png);
   background-position: bottom;
   background-size: 101%;
-  padding-bottom: 30%;  /* 375px */
+  padding-bottom: 18%;  /* 375px */
   position: relative;
   background-repeat: no-repeat;
 }
