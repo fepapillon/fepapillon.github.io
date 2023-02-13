@@ -32,7 +32,6 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="css/snowflake.css">
   <style>
     .overlay {
       height: 100%;
@@ -193,10 +192,6 @@
         </div>
       </div> 
     </div>
-
-   -->
-
-
 
   <!-- book section -->
 
@@ -513,12 +508,13 @@
             Contacteaza-ne
           </h2>
         </div>
-        <div class="info_logo">
-          <img src="images/logo.png" alt="">
-        </div>
+        
         <div class="info_top">
           <div class="info_form">
             <form action="">
+              <div class="info_logo">
+                <img src="images/logo.png" alt="">
+              </div>
               <input type="text" id="email2" placeholder="Va rugam sa va introduceti e-mailul">
               <button>
                 Aboneaza-te
@@ -654,7 +650,7 @@
                   </a>
                 </div>
                 <div class="col-md-2">
-                  <a href="#" class="link-box">
+                  <a href="https://www.google.com/maps/place/Colegiul+%E2%80%9E%C8%98coala+Na%C8%9Bional%C4%83+de+Gaz%E2%80%9D/@46.1569254,24.3524051,17z/data=!4m5!3m4!1s0x474b8ec33aba0633:0xe727913978308d79!8m2!3d46.1570592!4d24.3538751" class="link-box">
                     <div class="img-box">
                       <img src="images/location.png" alt="">
                     </div>
@@ -676,9 +672,6 @@
   
   <!-- end info section -->
 
-  <div class="snowflakes">
-    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-  </div>
   <!-- footer section -->
   <section class="footer_section ">
     <p>
@@ -688,6 +681,11 @@
   </section>
   <!-- footer section -->
   <script>
+    document.querySelectorAll(".price_detail > p").forEach(e => {
+      if(e.innerText.length > 30) {
+        e.innerText = e.innerText.substring(0,90) + "..."
+      }
+    });
 
     
         

@@ -592,7 +592,7 @@ pre code {
   flex-wrap: nowrap;
   margin-right: -15px;
   margin-left: -15px;
-  justify-content: space-around;
+  justify-content: center !important;
 }
 
 .no-gutters {

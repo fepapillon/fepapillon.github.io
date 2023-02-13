@@ -81,6 +81,7 @@
 
     .info_section .info_main .row>div {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
         text-align: center;
