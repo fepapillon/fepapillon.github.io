@@ -18,7 +18,7 @@
 @media (max-width: 992px) {
     .slider_section .img-box {
         padding-bottom: 200px;
-        background-size: cover;
+        /*background-size: cover;*/
     }
 
     .book_section {
