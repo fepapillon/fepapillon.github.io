@@ -1,3 +1,17 @@
+
+$(".overlay-content").append(`<div class="dropdown">
+<a class="btn btn-secondary dropdown-toggle btn-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 13px;">
+  Istoric
+</a>
+<ul class="dropdown-menu">
+  <li><a class="history-select" data-lang="cur">Curent</a></li>
+  <li><a class="history-select" data-lang="xmas">Craciun</a></li>
+  <li><a class="history-select" data-lang="feb">Februarie</a></li>
+</ul>
+</div>`)
+
+
+
 $(".lang-select").on("mouseover",(e) => {
     console.log($(e.target).attr("data-lang"));
     switch ($(e.target).attr("data-lang")) {
@@ -27,5 +41,21 @@ $(".lang-select").on("mouseover",(e) => {
 
       default:
         break
+    }
+  })
+
+  $(".history-select").on("mouseover",(e) => {
+    console.log($(e.target).attr("data-lang"));
+    switch ($(e.target).attr("data-lang")) {
+      case "xmas":
+        $(e.target).attr("href","/backup/craciun/index.html")
+        break;
+
+      case "feb":
+        $(e.target).attr("href","/backup/februarie/index.html")
+        break;
+      case "cur":
+        $(e.target).attr("href","../../index.html")
+        break;
     }
   })
