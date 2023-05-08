@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title translate="no">Papillon</title>
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon-32x32.png">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <script src="scripts/ninge.js"></script>
+  <link rel="stylesheet" href="css/snowflake.css">
+</head>
+<style>
+  .overlay {
+    height: 100%;
+    /*width: 0; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 86, 221, 0.95)), to(rgba(10, 216, 171, 0.95)));
+    background: linear-gradient(to bottom, rgba(8, 86, 221, 0.95), rgba(10, 216, 171, 0.95));
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  h3 {
+    display: flex;
+  }
+  #yt_video iframe {
+    position:absolute;
+    top:20%;
+    left:15%;
+    width:70%; 
+    height:50%;}
+
+</style>
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <div></div>
+          <div class="fk_width" id="">
+            <div class="custom_menu-btn">
+              <!-- SideMenu -->
+              <button class="dropdown-btn" onclick="openMenu()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+              
+            </div>
+
+
+            <div id="myNav" class="overlay" style =  "width: 1px;">
+              <div class="custom_menu-btn" style="padding-left: 25px;">
+                <!-- SideMenu -->
+                <button class="dropdown-btn" onclick="openMenu()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+              </div>
+              <div class="overlay-content">
+                <a href="index.html">Acasa</a>
+                <a href="about.html">Despre Noi</a>
+                <a href="package.html">Pachete Turistice</a>
+                <a href="echipa.html">Echipa Noastra</a>
+                <label for="lang" ></label>
+                <div class="dropdown">
+                  <a class="btn btn-secondary dropdown-toggle btn-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 13px;">
+                    Limba
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a translate="no" class="lang-select" data-lang="ro">Romana</a></li>
+                    <li><a translate="no" class="lang-select" data-lang="en">English</a></li>
+                    <li><a translate="no" class="lang-select" data-lang="de">Deutsch</a></li>
+                    <li><a translate="no" class="lang-select" data-lang="jp">日本 </a></li>
+                    <li><a translate="no" class="lang-select" data-lang="es">Español</a></li>
+                    <li><a translate="no" class="lang-select" data-lang="it">Italiano</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+          </a>
+          <div class="user_option">
+            <label for="lang" ></label>
+            
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  
+  <!-- package section -->
+  <section class="package_section layout_padding-top">
+    <h1 style="color: black;">Formular de Comanda</h1>
+    <form action="order_complete.html">
+        <h2 style="color: black; font-size: 20px;">Nume *</h1>
+            <input type="text" required>
+        <h2 style="color: black; font-size: 20px;">Prenume *</h1>
+            <input type="text" required>
+        <h2 style="color: black; font-size: 20px;">Telefon *</h1>
+            <input type="tel" required>
+        <h2 style="color: black; font-size: 20px;">Email *</h1>
+            <input type="text" required>
+        <h2 style="color: black; font-size: 20px;">Pachetul Turistic *</h1>
+            <select name="lang" id="lang">
+                <option >Selectati Pachetul Turistic</option>
+                <option value="">Top 10 Parcuri Naturale din SUA</option>
+                <option value="">Plajele din Krabi</option>
+                <option value="">Cele mai mari mistere ale Egiptului Antic</option>
+                <option value="">Toamna in Delta Dunarii</option>
+                <option value="">Sejur Charter Creta</option>
+                <option value="">Vietnam - Marele Circuit</option>
+              </select>
+        <section class="about_section">
+            <div class="heading_container">
+              <div class="btn-box">
+                <a>
+                 <input type="submit" value="Comandati" style="border: 0px;background-color: transparent;"> 
+                </a>
+              </div>
+            </div>
+        </section>
+    </form>
+  </section>
+  
+  <!-- end package section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section ">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Va Multumim
+          </h2>
+        </div>
+        <div class="info_logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <div class="info_top">
+          <div class="info_form">
+            <form action="">
+              <input type="text" id="email2" placeholder="Va rugam sa va introduceti e-mailul">
+              <button>
+                Aboneaza-te
+              </button>
+            </form>
+          </div>
+          <div class="social_box">
+            <a href="https://www.facebook.com/sngmedias">
+              <img src="images/facebook.png" alt="">
+            </a>
+            <a href="https://sngmedias.ro">
+              <img src="images/internet.png" width="32px" alt="">
+            </a>
+            <a href="https://www.instagram.com/colegiulsng/">
+              <img src="images/instagram.png" alt="">
+            </a>
+            <a href="https://www.youtube.com/channel/UC4RXs0NvFbNkak5T1BUOpaA">
+              <img src="images/youtube.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="info_main" style="text-align: center;">
+          <div class="row">
+            
+
+            <div class="col-md-3 col-lg-2 offset-lg-1">
+              <h5>
+                Informatii
+              </h5>
+              <ul>
+                <li>
+                  <a href="#">
+                    Acest website a fost
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    creat pentru firma de 
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    exercitiu a clasei de Turism XI de la
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Colegiu "Scoala Nationala de Gaz"
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <div class="info_link-box">
+                <h5>
+                  Linkuri Folositoare
+                </h5>
+                <ul>
+                  <li class=" active">
+                    <a class="link_button" href="index.html">Acasa <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="">
+                    <a class="link_button" href="about.html">Despre Noi </a>
+                  </li>
+                  <li class="">
+                    <a class="link_button" href="package.html">Pachete Turistice </a>
+                  </li>
+                  <li class="">
+                    <a class="link_button" href="echipa.html">Echipa Noastra </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-2 offset-lg-1" style="text-align: center;">
+              <h5>
+                Suport
+              </h5>
+              <ul >
+                <li>
+                  <a href="#">
+                    Daca aveti o nelamurire sau
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    a-ti intampinat o problema
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    va rugam sa ne contactati la
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    email-ul de mai jos
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 col-md-10 mx-auto">
+            <div class="info_contact layout_padding2">
+              <div class="row">
+                <div class="col-md-5">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="images/call.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        +0269845867
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="col-md-5">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="images/mail.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        fepapillonsrl@yahoo.com
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-2">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="images/location.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        Medias, str. Metanului 1 , România
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="snowflakes"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="footer_section ">
+    <p>
+      &copy; 2022 All Rights Reserved. Design by
+      <a href="https://github.com/zKlau" translate="no">Claudiu Padure</a>
+    </p>
+  </section>
+  <!-- footer section -->
+  <script>
+
+    function openMenu() {
+      if (document.querySelector("#myNav").style.width == "") {
+        document.querySelector("#myNav").style.width = "1px";
+      } else {
+        document.querySelector("#myNav").style.width = "";
+      }
+    }
+
+    $(function () {
+     $('#vidBox').VideoPopUp({ 
+      	backgroundColor: "#17212a",
+      	opener: "video1",
+       maxweight: "640",
+       idvideo: "v1"
+     });
+    });
+    
+    </script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="../../scripts/side-menu.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
